@@ -21,10 +21,10 @@ SET time_zone = "+10:00";
 --
 -- Add new user into database
 --
-GRANT SELECT, INSERT, UPDATE, DELETE
-	ON assignment1.*
-	TO 'assignment1User'@'localhost'
-	IDENTIFIED BY 'uXURCyzZaHHrm7f0';
+-- GRANT SELECT, INSERT, UPDATE, DELETE
+-- 	ON assignment1.*
+-- 	TO 'assignment1User'@'localhost'
+-- 	IDENTIFIED BY 'uXURCyzZaHHrm7f0';
 
 --
 -- Database: `assignment1`
