@@ -34,9 +34,9 @@ require_once "include/utils.php";
 						$query = 'SELECT f.user_id, u.name, COUNT(f.follower_id) AS followers
 						FROM follow f
 						RIGHT JOIN
-						user u
-						on f.follower_id = u.id
-						GROUP BY f.follower_id
+						user AS u
+						ON f.user_id = u.id
+						GROUP BY u.id
 						ORDER BY followers DESC LIMIT 10';
 
 						if($result = mysqli_query($conn, $query)){
