@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  php-apache:
+    build:
+      context: .
+    environment:
+      DB_HOST: db
+      DB_USER: assignment1User
+      DB_PASSWORD: uXURCyzZaHHrm7f0
+      DB_NAME: assignment1
+    depends_on:
+      - db
+    volumes:
+      - ./:/var/www/html/
+    ports:
+      - 8000:80
+
+  db:
+    container_name: db
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD
+      MYSQL_DATABASE: assignment1
+      MYSQL_USER: assignment1User
+      MYSQL_PASSWORD: uXURCyzZaHHrm7f0
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d/
+    ports:
+      - "9906:3306"
