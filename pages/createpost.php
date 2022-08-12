@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once "include/config.php"; //database connection
-require_once "include/utils.php"; //useful functions
+require_once "../include/config.php"; //database connection
+require_once "../include/utils.php"; //useful functions
 
 if(isset($_GET['pid'])){//check to see if the user clicked the reply button
 	$_SESSION['reply'] = $_GET['pid'];//save the variable in session
@@ -57,10 +57,10 @@ if (!isset($_SESSION['username'])) {
 <html>
 <head>
 	<title>Post Page</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
-	<?php include_once "include/nav.php";?>
+	<?php include_once "../include/nav.php";?>
 	<section>
 		<div class="main-wrapper">
 			<h1>Create a post as user <?php echo $_SESSION['username']; ?></h1>

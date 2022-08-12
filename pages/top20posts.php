@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once "include/config.php";
-require_once "include/utils.php";
+require_once "../include/config.php";
+require_once "../include/utils.php";
 
 
 
@@ -11,10 +11,10 @@ require_once "include/utils.php";
 <html>
 <head>
 		<title>Top 20 Posts</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
-	<?php include_once "include/nav.php";?>
+	<?php include_once "../include/nav.php";?>
 		<section>
 			<div class="main-wrapper">
 				<h1>Top 20 Posts</h1>

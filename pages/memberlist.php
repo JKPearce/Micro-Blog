@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once "include/config.php";
-require_once "include/utils.php";
+require_once "../include/config.php";
+require_once "../include/utils.php";
 
 $userid = $followid = ""; //init variables
 
@@ -43,10 +43,10 @@ if (isset($_GET['id'])) {//check to see if a follow link has been clicked
 	<html>
 	<head>
 		<title>Members Page</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
 	</head>
 	<body>
-		<?php include_once "include/nav.php";?>
+		<?php include_once "../include/nav.php";?>
 		<section>
 			<div class="main-wrapper">
 				<h1>Members list</h1>

@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once "include/config.php";
-require_once "include/utils.php";
+require_once "../include/config.php";
+require_once "../include/utils.php";
 
 //define variables and set empty values
 $name = $password = $email = $passwordErr = $nameErr = "";
@@ -57,10 +57,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
 	<title>Sign Up</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
-	<?php include_once "include/nav.php";?>
+	<?php include_once "../include/nav.php";?>
 	<section>
 		<div class="main-wrapper">
 			<div class="signup-form">

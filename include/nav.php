@@ -3,25 +3,25 @@
 			<div class="nav-links">
 				<ul>
 					<li>
-						<a href="index.php">Home</a>
+						<a href="../index.php">Home</a>
 					</li>
 					<li>
-						<a href="createpost.php">Create Post</a>
+						<a href="../pages/createpost.php">Create Post</a>
 					</li>
 					<li>
-						<a href="memberlist.php">Member List</a>
+						<a href="../pages/memberlist.php">Member List</a>
 					</li>
 					<li>
-						<a href="stats.php">Member Stats</a>
+						<a href="../pages/stats.php">Member Stats</a>
 					</li>
 					<li>
-						<a href="top20posts.php">Top 20 Posts</a>
+						<a href="../pages/top20posts.php">Top 20 Posts</a>
 					</li>
 					<li>
-						<a href="signup.php">Sign up</a>
+						<a href="../pages/signup.php">Sign up</a>
 					</li>
 					<li>
-						<a href="login.php">Log In</a>
+						<a href="../pages/login.php">Log In</a>
 					</li>
 				</ul>
 			</div>
